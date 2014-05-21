@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="animation-logo.css">
+
+<script type="text/javascript">
+
+var isyellow = false;
+	function dostuff(thediv){
+		if (!isyellow) {
+			thediv.style.left='98%'
+			thediv.style.backgroundColor= 'blue'
+			isyellow = true}
+		else {
+			thediv.style.left='50px'
+			thediv.style.backgroundColor= 'green'
+			isyellow = false}
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="contat" >
+
+	<div class="logo" onclick="dostuff(this)">
+		
+	</div>
+
+</div>
+
+
+	</body>
+	</html>

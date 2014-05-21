@@ -2,100 +2,17 @@
 /*************************/
 /*TOP LOGO BAR*/
 /*************************/
-.logo{
-	width: 90%;
-	height: 25%;
-	background-color: green;
-	color: white;
-	margin-left: auto;
-	margin-right: auto;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+#complete{
+	  opacity: 1;
 }
 
-.logosecond{
-	/* Chrome, Safari, Opera */
-	-webkit-animation: myfirst .5s; 
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
-	/* Standard syntax */
-	animation: myfirst .5s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	width: 90%;
-	height: 25%;
-	background-color: green;
-	color: white;
-	margin-left: auto;
-	margin-right: auto;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+.clear{
+	opacity: 0;
 }
 
-
-@-webkit-keyframes myfirst
-{
-	from {background: blue;}
-	to 	 {background: green;}
-}
-
-@keyframes myfirst
-{
-	from {background: blue;}
-	to 	 {background: green;}
-}
 /*************************/
 /*END LOGO*/
 /*************************/
-
-/*************************/
-/*INTERACTIVE BUTTONS*/
-/*************************/
-/* entire container, keeps perspective */
-/*
-.flip-container {
-	perspective: 1000;
-}
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-
-	}
-
-.flip-container, .front, .back {
-	width: 250px;
-	height: 30px;
-}
-
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
-}
-
-
-.front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.front {
-	z-index: 2;
-	background-color: #00FFF2;
-	border: solid black;
-}
-
-.back {
-	transform: rotateY(180deg);
-	border: solid black;
-}*/
-/*************************/
-/*END INTERACTIVE BUTTONS*/
-/*************************/
-
 
 /*My buttons*/
 #new{
@@ -119,103 +36,3 @@
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
-
-/*************************/
-/*toggling class*/
-/*************************/
-/* entire container, keeps perspective */
-.flip-container{
-/*perspective*/
-	-webkit-perspective:1000;
-    -moz-perspective:1000;
-    -ms-perspective:1000;
-    -o-perspective:1000;
-    perspective:1000;
-}
-
-.flipped {
-/*transform*/
-	-webkit-transform:rotateY(180deg);
-   	-moz-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    transform:rotateY(180deg);
-}
-
-.flip-container, .frontside, .backside{
-	width:218px;
-	height:35px;
-}
-
-/* flip speed goes here */
-.flipper {
-/*transition*/
-	-webkit-transition:0.2s;
-   	-moz-transition:0.2s;
-    -o-transition:0.2s;
-    transition:0.2s;
-/*transform-style*/
-	-webkit-transform-style:preserve-3d;
-   	-moz-transform-style:preserve-3d;
-    -ms-transform-style:preserve-3d;
-    -o-transform-style:preserve-3d;
-    transform-style:preserve-3d;
-position:relative;
-}
-
-/* hide back of pane during swap */
-.frontside, .backside{
-/*backface-visibility*/
-	-webkit-backface-visibility:hidden;
-   	-moz-backface-visibility:hidden;
-    -ms-backface-visibility:hidden;
-    -o-backface-visibility:hidden;
-    backface-visibility:hidden;
-	position:absolute;
-	top:0;
-	left:0;
-}
-
-/* front pane, placed above back */
-.frontside{
-	z-index:2;
-}
-
-/* back, initially hidden pane */
-.backside{
-/*transform*/
-	-webkit-transform:rotateY(180deg);
-   	-moz-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    transform:rotateY(180deg);
-}
-
-.option{
-	height: 30px;
-	width: 70px;
-	font: bold 15px Trebuchet;
-	display: inline-block;
-	background: #09C3F2;
-	color: white;
-	border-style: outset;
-	border-width: 3px;
-	border-color: #09C3F2;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.item{
-	width: 217px;
-}
-
-.scroll{
-	width:250px;
-	height:100px;
-	overflow:auto;
-} 
-
-
-
-
