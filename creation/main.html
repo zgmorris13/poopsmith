@@ -3,15 +3,19 @@
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">
 
-<script type="text/javascript">
+<script type="text/javascript">	
 
 function dostuff(){
 	var tochange = document.getElementById('start');
 	var comein = document.getElementById('game');
+	var full = document.getElementById('full');
+	/*moving/fading out*/
 	tochange.style.left='-100%'
 	tochange.style.opacity='0'
-	comein.style.left='0px'
+	/*bringing/fading in*/
+	comein.style.left='0%'
 	comein.style.opacity='1'
+
 }
 
 </script>
@@ -20,13 +24,13 @@ function dostuff(){
 <body>
 
 <!--The surrounding div-->
-<div class="full">
+<div id="full">
 
 	<!--The start menu div-->
 	<div id="start">
 
 		<div class="logo">
-			A Text Adventure
+			Ye Olde Poopsmith
 		</div>
 
 			<div class="buttonholder">
@@ -37,7 +41,7 @@ function dostuff(){
 
 	<!--The game play area div-->
 	<div id="game">
-		<h1>It WOOOOoooOOOrrrked!!</h1>
+		<h1>game!!</h1>
 
 
 	</div>

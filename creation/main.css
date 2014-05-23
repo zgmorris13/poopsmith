@@ -2,16 +2,23 @@
 	font-size: 3em;
 	font-family: Georgia;
 	text-align: center;
-	height: 15%;
+	height: 60px;
 	margin-right: auto;
 	margin-left: auto;
 	color: white;
 	background-color: #000000;
-	border-radius: 30px;
 }
 
-.full{
+#full{
+	height: 100%;
+	width: 100%; 
 	overflow: hidden;
+	background-image: url('landscape.jpg'); 	
+	background-attachment:fixed;
+	background-position:center; 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: all 2s;
 }
 /* The start screen */
 #start{
@@ -21,28 +28,42 @@
 	position: relative;
 	left: 0px;
 }
-
+/*around buttons*/
 .buttonholder{
+	position: relative;
+	margin-top: 75px;
 	margin-right: auto;
 	margin-left: auto;
-	height: 100%;
-	width: 350px;
+	height: 250px;
+	width: 340px;
+	background-color: #7B9F35;
+	border-radius: 10px;
+	opacity: .90;
 }
-
+/*start menu buttons*/
 .startbutton{
+	color: white;
 	height: 90px;
 	width: 300px;
-	margin-top: 45%;
+	margin-top: 7%;
+	margin-left: 20px;
+	margin-right: 20px;
 	font-size: 1.5em;
-	background-color: #6DF2FF;
+	font-weight:900;
+	background-color: #555500;
 	border-radius: 10px;
+	opacity: 1;
 }
 /* The game screen */
 #game{
-	background-color: red;
+	height: 100%;
+	width: 100%;
+	background-color: grey;
+	color: black;
 	position: relative;
-	top: -500px;
+	top: -100%;
 	left: 100%;
 	transition: all 1s;
+	/*for a fade in effect*/
 	opacity: 0;
 }
