@@ -13,11 +13,11 @@
 .full{
 	overflow: hidden;
 }
-
+/* The start screen */
 #start{
 	height: 100%;
 	width: 100%;
-	transition: all .5s;
+	transition: all 1s;
 	position: relative;
 	left: 0px;
 }
@@ -37,11 +37,12 @@
 	background-color: #6DF2FF;
 	border-radius: 10px;
 }
-
+/* The game screen */
 #game{
-	/*HELP - Off to the right*/
 	background-color: red;
-	position: fixed;
-	left: 50px;
-
+	position: relative;
+	top: -500px;
+	left: 100%;
+	transition: all 1s;
+	opacity: 0;
 }
