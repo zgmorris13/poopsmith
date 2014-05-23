@@ -1,0 +1,47 @@
+.logo{
+	font-size: 3em;
+	font-family: Georgia;
+	text-align: center;
+	height: 15%;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	background-color: #000000;
+	border-radius: 30px;
+}
+
+.full{
+	overflow: hidden;
+}
+
+#start{
+	height: 100%;
+	width: 100%;
+	transition: all .5s;
+	position: relative;
+	left: 0px;
+}
+
+.buttonholder{
+	margin-right: auto;
+	margin-left: auto;
+	height: 100%;
+	width: 350px;
+}
+
+.startbutton{
+	height: 90px;
+	width: 300px;
+	margin-top: 45%;
+	font-size: 1.5em;
+	background-color: #6DF2FF;
+	border-radius: 10px;
+}
+
+#game{
+	/*HELP - Off to the right*/
+	background-color: red;
+	position: fixed;
+	left: 50px;
+
+}

@@ -1,0 +1,44 @@
+<DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<script type="text/javascript">
+
+function dostuff(){
+	var tochange = document.getElementById('start');
+	tochange.style.left='-100%'
+}
+
+</script>
+
+</head>
+<body>
+
+<!--The surrounding div-->
+<div class="full">
+
+	<!--The start menu div-->
+	<div id="start">
+
+		<div class="logo">
+			A Text Adventure
+		</div>
+
+			<div class="buttonholder">
+				<button class="startbutton" onclick="dostuff()">Resume</button>
+				<button class="startbutton">Start New Game</button>
+			</div>
+	</div>
+
+	<!--The game play area div-->
+	<div id="game">
+		<h1>It WOOOOoooOOOrrrked!!</h1>
+
+
+	</div>
+
+</div>
+
+</body>
+</html>
