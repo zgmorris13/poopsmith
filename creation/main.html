@@ -1,0 +1,52 @@
+<DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<script type="text/javascript">	
+
+function dostuff(){
+	var tochange = document.getElementById('start');
+	var comein = document.getElementById('game');
+	var full = document.getElementById('full');
+	/*moving/fading out*/
+	tochange.style.left='-100%'
+	tochange.style.opacity='0'
+	/*bringing/fading in*/
+	comein.style.left='0%'
+	comein.style.opacity='1'
+
+}
+
+</script>
+
+</head>
+<body>
+
+<!--The surrounding div-->
+<div id="full">
+
+	<!--The start menu div-->
+	<div id="start">
+
+		<div class="logo">
+			Ye Olde Poopsmith
+		</div>
+
+			<div class="buttonholder">
+				<button class="startbutton" onclick="dostuff()">Resume</button>
+				<button class="startbutton">Start New Game</button>
+			</div>
+	</div>
+
+	<!--The game play area div-->
+	<div id="game">
+		<h1>game!!</h1>
+
+
+	</div>
+
+</div>
+
+</body>
+</html>

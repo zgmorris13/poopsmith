@@ -1,0 +1,49 @@
+
+.logo{
+	width: 150px;
+	height: 350px;
+	background-color: green;
+	color: white;
+	transition: all 1s;
+	position: relative;
+	left: 50px;
+}
+
+.contat{
+	width: 99%;
+	height: 99%;
+	overflow: hidden;
+}
+
+.logosecond{
+	/* Chrome, Safari, Opera */
+	-webkit-animation: myfirst 2s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	/* Standard syntax */
+	animation: myfirst 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	width: 90%;
+	height: 25%;
+	background-color: green;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+/*	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;*/
+}
+
+
+@-webkit-keyframes myfirst
+{
+	from {background: blue;}
+	to 	 {background: green;}
+}
+
+@keyframes myfirst
+{
+	from {background: blue;}
+	to 	 {background: green;}
+}
