@@ -109,7 +109,7 @@ var character = {xPosition:0, yPosition:0, mapIndex:12}
     }
 
     function moveFace(space){
-      document.getElementById(space).innerHTML = "<img src=\"Face.png\" width=\"75\" height=\"75\"></img>"
+      document.getElementById(space).innerHTML = "<img src=\"pics/Face.png\" width=\"75\" height=\"75\"></img>"
       
     }
 
