@@ -3,24 +3,12 @@
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">
 
-<script type="text/javascript">	
-
-function dostuff(){
-	var tochange = document.getElementById('start');
-	var comein = document.getElementById('game');
-	var full = document.getElementById('full');
-	/*moving/fading out*/
-	tochange.style.left='-100%'
-	tochange.style.opacity='0'
-	/*bringing/fading in*/
-	comein.style.left='0%'
-	comein.style.opacity='1'
-
-}
-
+<script type="text/javascript" src="jspage.js">	
 </script>
 
+
 </head>
+
 <body>
 
 <!--The surrounding div-->
@@ -41,11 +29,78 @@ function dostuff(){
 
 	<!--The game play area div-->
 	<div id="game">
-		<h1>game!!</h1>
+
+		<!--left side bar-->
+		<div id="leftside">
+		<ul>
+			<li onclick="second()">Leave</li>
+			<li>Talk</li>
+			<li>Touch</li>
+			<li>Buy</li>
+		</ul>
+		</div>
 
 
 	</div>
 
+	<!-- The map -->
+<div id='map'>
+	<div id="inner">
+		<div id="0" class="mountain"></div>
+		<div id="1" class="mountain"></div>
+		<div id="2" class="mountain"></div>
+		<div id="3" class="forest"></div>
+		<div id="4" class="forest"></div>
+		<div id="5" class="mountain"></div>
+		<div id="6" class="mountain"></div>
+		<div id="7" class="forest"></div>
+		<div id="8" class="forest"></div>
+		<div id="9" class="forest"></div>
+		<div id="10" class="mountain"></div>
+		<div id="11" class="forest"></div>
+		<div id="12" class="forest">
+			<img src="Face.png" width="75" height="75"></img>
+		</div>
+		<div id="13" class="forest"></div>
+		<div id="14" class="forest"></div>
+		<div id="15" class="mountain"></div>
+		<div id="16" class="forest"></div>
+		<div id="17" class="forest"></div>
+		<div id="18" class="forest"></div>
+		<div id="19" class="forest"></div>
+		<div id="20" class="mountain"></div>
+		<div id="21" class="mountain"></div>
+		<div id="22" class="forest"></div>
+		<div id="23" class="forest"></div>
+		<div id="24" class="forest"></div>
+	</div>
+	<div id="arrowContainer">
+
+		<div class="arrows up">
+			<img src="upArrow.png" width="50" height="50" onclick="moveUp()"></img>
+		</div>
+
+
+		<div class="arrows left">
+			<img src="leftArrow.gif" width="50" height="50" onclick="moveLeft()"></img>
+		</div>
+
+
+		<div class="arrows right">	
+			<img src="rightArrow.png" width="50" height="50" onclick="moveRight()"></img>
+		</div>
+
+
+		<div class="arrows down">
+	  		<img src="downArrow.png" width="50" height="50" onclick="moveDown()"></img>
+	  	</div>
+
+  	</div>
+
+</div>
+	<div id="display"></div>
+  	<div id="display2"></div>
+<!-- end of the full div -->	
 </div>
 
 </body>
