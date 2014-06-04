@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo Map</title>
+<script src="jquery.js"></script>
+<style type="text/css">
+#container{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	outline: 1px solid black;
+}
+
+.grass{
+	height:10px;
+	width: 10px;
+	position: relative;
+	float: left;
+	background-color: green;
+}
+
+.dirt{
+	height:10px;
+	width: 10px;
+	position: relative;
+	float: left;
+	background-color: tan;
+}
+</style>
+</head>
+
+<body>
+	<div id="container"></div>
+	<script>
+
+	var mapArray =
+	[
+		[0,0,0,0,0],
+		[0,1,1,0,0],
+		[0,0,0,0,0],
+		[0,1,0,0,0],
+		[0,0,1,0,0]
+	]
+
+	function drawMap()
+	{
+		for(var iR = 0; iR < mapArray.length; iR++)
+			for(var iC = 0; iC < mapArray[iR].length; iC++)
+			{
+				if(parsInt(mapArray[iR][iC]) == 0)
+				{
+					$('#container').append('<div class="green"></div>')
+				}
+				if(parsInt(mapArray[iR][iC]) == 1)
+				{
+					$('#container').append('<div class="green"></div>')
+				}
+			}
+	}
+	</script>
+</body>
