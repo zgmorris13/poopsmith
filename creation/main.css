@@ -18,7 +18,7 @@
 	background-position:center; 
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	transition: all 2s;
+	transition: all .5s;
 	z-index: -2;
 }
 /********************/
@@ -27,7 +27,7 @@
 #start{
 	height: 100%;
 	width: 100%;
-	transition: all 1s;
+	transition: all .5s;
 	position: relative;
 	left: 0px;
 }
@@ -67,18 +67,21 @@
 	position: relative;
 	top: -100%;
 	left: 100%;
-	transition: all 1s;
+	transition: all .5s;
 	/*for a fade in effect*/
 	opacity: 0;
 }
+
 /*Left side bar*/
 #leftside{
 	float: left;
 	border: solid black;
-	height: 95%;
+	height: 99%;
 	width: 250px;
 	background-color: #354F00;
 }
+
+
 li{
 	list-style-type: none;
 	background-color: #801515;
@@ -89,16 +92,33 @@ li{
 	font-size: 4em;
 	text-align: center;
 	border-radius: 10px;
-	transition: all 1s;
+	transition: all .5s;
 }
 
-#back{
-	background-color: #801515;
-	position: relative;
-	margin-left: 275px;
+#th{
+	height: 67px;
+width: 78px;
+margin-bottom: -13px;
+}
+
+/*Right side bar!!!*/
+#rightside{
+	float: right;
+	border: solid black;
+	height: 99%;
+	width: 175px;
+	background-color: #354F00;
+}
+
+#action{
+	float: right;
+	clear: both;
+	margin: 20px 20px;
 	height: 125px;
 	width: 125px;
+	background-color: #D46A6A;
 }
+
 /********************/
 /* The map screen */
 /********************/
@@ -110,11 +130,11 @@ li{
 	left: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	transition: all 1s;
+	transition: all .5s;
 	/*for a fade in effect*/
 	opacity: 0;
 	z-index: 0;
-	}
+}
 
 #cont{
 	margin-top: 15px;
@@ -127,12 +147,20 @@ right: 0;
 margin-left: auto;
 margin-right: auto;
 background-color: #808080;
-height: 460px;
+height: 625px;
 width: 453px;
 opacity: 0.7;
 z-index: -1;
 }
 
+#backbtn{
+background-color: #D46A6A;
+position: relative;
+margin-left: -115%;
+height: 125px;
+width: 125px;
+margin-top: -104px;
+}
 /********************/
 /* Darvil's Sandbox */
 /********************/

@@ -33,15 +33,26 @@
 	<div id="game">
 
 		<!--*********************-->
-		<!--left side bar-->
+		<!--left side bar
+			including places buttons-->
 		<!--*********************-->
 		<div id="leftside">
 		<ul>
-			<li onclick="changer('#game', '#map')">Leave</li>
-			<li>Talk</li>
-			<li>Touch</li>
-			<li>Buy</li>
+			<li onclick="changer('#game', '#map')">
+			<img src="pics/th.jpg" id="th"></li>
+			<li><img src="pics/Blacksmith.jpg" id="th"></li>
+			<li><img src="pics/pub.png" id="th"></li>
+			<li><img src="pics/townhall.jpg" id="th"></li>
 		</ul>
+		</div>
+
+		<!--*********************-->
+		<!--right side bar
+			will include action buttons-->
+		<!--*********************-->
+		<div id="rightside">
+			<button id="action">Do it</button>
+			<button id="action">Don't do it</button>
 		</div>
 
 
@@ -51,7 +62,6 @@
 <!--*********************-->
 <div id='map'>
 
-	<div id="cont">
 	<div id="behind"></div>
 		<div id="inner">
 			<div id="0" class="mountain"></div>
@@ -103,14 +113,15 @@
 		  		<img src="pics/downArrow.png" width="50" height="50" onclick="moveDown()"></img>
 		  	</div>
 
-	  	</div>
-
-	</div>
-
-	<!--*********************-->
+		  	<!--*********************-->
 	<!--back button-->
 	<!--*********************-->
-	<button id='back' onclick="reverse('#map', '#game')">Back to game</button>
+	<button id='backbtn' onclick="reverse('#map', '#game')">RETURN</button>
+	  	</div>
+
+	
+
+<!-- end of the map div-->
 </div>
 
 <!-- end of the full div -->	
