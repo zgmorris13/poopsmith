@@ -174,32 +174,40 @@ var map = [{
 }];
 
 function moveUp() {
-    character.yPosition++;
-    deleteFace(character.mapIndex)
-    findIndex();
-    moveFace(character.mapIndex)
+    if (character.yPosition < 2) {
+        character.yPosition++;
+        deleteFace(character.mapIndex)
+        findIndex();
+        moveFace(character.mapIndex)
+    }
 }
 
-function moveDown() {
-    character.yPosition--;
-    deleteFace(character.mapIndex)
-    findIndex();
-    moveFace(character.mapIndex)
 
+function moveDown() {
+    if (character.yPosition > -2) {
+        character.yPosition--;
+        deleteFace(character.mapIndex)
+        findIndex();
+        moveFace(character.mapIndex)
+    }
 }
 
 function moveRight() {
-    character.xPosition++;
-    deleteFace(character.mapIndex)
-    findIndex();
-    moveFace(character.mapIndex)
+    if (character.xPosition < 2) {
+        character.xPosition++;
+        deleteFace(character.mapIndex)
+        findIndex();
+        moveFace(character.mapIndex)
+    }
 }
 
 function moveLeft() {
-    character.xPosition--;
-    deleteFace(character.mapIndex)
-    findIndex();
-    moveFace(character.mapIndex)
+    if (character.xPosition > -2) {
+        character.xPosition--;
+        deleteFace(character.mapIndex)
+        findIndex();
+        moveFace(character.mapIndex)
+    }
 }
 
 function findIndex() {

@@ -5,9 +5,11 @@
 
 <script type="text/javascript" src="jspage.js">	
 </script>
-
+<script type="text/javascript" src="swipe.js">	
+</script>
 </head>
-<body>
+<!-- touchstarts are trying out the swipe capabilities-->
+<body ontouchstart="touchStart(event);" ontouchmove="touchMove(event);" ontouchend="touchEnd(event);" ontouchcancel="touchCancel(event);">
 <!--*********************-->
 <!--The surrounding div-->
 <!--*********************-->
@@ -113,7 +115,7 @@
 		  		<img src="pics/downArrow.png" width="50" height="50" onclick="moveDown()"></img>
 		  	</div>
 
-		  	<!--*********************-->
+	<!--*********************-->
 	<!--back button-->
 	<!--*********************-->
 	<button id='backbtn' onclick="reverse('#map', '#game')">RETURN</button>
