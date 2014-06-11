@@ -9,6 +9,9 @@
 	background-color: #000000;
 }
 
+/********************/
+/* div that holds all divs */
+/********************/
 #full{
 	height: 100%;
 	width: 100%; 
@@ -161,6 +164,7 @@ height: 125px;
 width: 125px;
 margin-top: -104px;
 }
+
 /********************/
 /* Darvil's Sandbox */
 /********************/
