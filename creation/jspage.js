@@ -24,19 +24,36 @@ function reverse(tochange, comein) {
     comein.style.opacity = '1'
 }
 
-/*For Left side list*/
-var check = false;
-
-function change(pass) {
-    if (!check) {
-        pass.style.backgroundColor = 'black'
-        check = true
-    } else {
-        pass.style.backgroundColor = 'yellow'
-        check = false
-    }
+//--------------------------------
+//function to bring top down
+function topDown(tochange, comein) {
+    tochange = document.querySelector(tochange);
+    comein = document.querySelector(comein);
+    /*moving/fading out*/
+    tochange.style.top = '100%'
+    tochange.style.opacity = '0'
+    /*bringing/fading in*/
+    comein.style.top = '-200%'
+    comein.style.opacity = '1'
 }
 
+//function to bring top down
+function downTop(tochange, comein) {
+    tochange = document.querySelector(tochange);
+    comein = document.querySelector(comein);
+    /*moving/fading out*/
+    tochange.style.top = '100%'
+    tochange.style.opacity = '0'
+    /*bringing/fading in*/
+    comein.style.top = '-100%'
+    comein.style.opacity = '1'
+}
+
+// var clicker = document.querySelector('#inventory')
+
+// clicker.onclick = function() {
+//     downTop('#inventory', '#game')
+// }
 
 /**************/
 /*Darvils code*/

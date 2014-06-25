@@ -1,15 +1,18 @@
 <DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="main.css">
+	<head>
 
-<script type="text/javascript" src="jspage.js">	
-</script>
-<script type="text/javascript" src="swipe.js">	
-</script>
-</head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script type="text/javascript" src="jspage.js"></script>
+	<script type="text/javascript" src="swipe.js"></script>
+	
+
+
+	</head>
 <!-- touchstarts are trying out the swipe capabilities-->
 <body ontouchstart="touchStart(event);" ontouchmove="touchMove(event);" ontouchend="touchEnd(event);" ontouchcancel="touchCancel(event);">
+
 <!--*********************-->
 <!--The surrounding div-->
 <!--*********************-->
@@ -25,8 +28,15 @@
 		</div>
 
 			<div class="buttonholder">
-				<button class="startbutton" onclick="changer('#start', '#game')">Resume</button>
-				<button class="startbutton">Start New Game</button>
+
+				<div class="startbutton" onclick="changer('#start', '#game')">
+					<p class="text">Resume</p>
+					</div>
+
+				<div class="startbutton">
+					<p class="text">Start New Game</p>
+					</div>
+
 			</div>
 	</div>
 	<!--*********************-->
@@ -41,59 +51,59 @@
 		<div id="leftside">
 		<ul>
 			<li onclick="changer('#game', '#map')">
-			<img src="pics/th.jpg" id="th"></li>
-			<li><img src="pics/Blacksmith.jpg" id="th"></li>
+			<img src="pics/th.jpg" id="th">
+			</li>
+
+			<li onclick="topDown('#game', '#inventory')">
+			<img src="pics/Blacksmith.jpg" id="th">
+			</li>
+
 			<li><img src="pics/pub.png" id="th"></li>
 			<li><img src="pics/townhall.jpg" id="th"></li>
 		</ul>
 		</div>
 
 		<!--*********************-->
-		<!--right side bar
-			will include action buttons-->
+		<!--right side bar will include action buttons-->
 		<!--*********************-->
 		<div id="rightside">
-			<button id="action">Do it</button>
-			<button id="action">Don't do it</button>
+			<div id="action">
+				<p class="do">Do it</p></div>
+			<div id="action">
+				<p class="do">Don't do it</p></div>
 		</div>
 
 
 	</div>
+
+	<!--*********************-->
+	<!--Inventory Page...?   -->
+	<!--*********************-->
+	<div id="inventory">
+	<!-- An inventory page will be here... just adding another page-->
+		<h1>heeeeeyyy...</h1>
+
+		<div class="startbutton">
+			<p class="text" onclick="downTop('#inventory','#game')">Back</p>
+			<!-- onclick="downTop('#inventory','#game')" -->
+		</div>
+
+
+	</div>
+
+
 	<!--*********************-->
 		<!-- The map -->
 	<!--*********************-->
 	<div id='map'>
 
 		<div id="behind"></div>
-			<div id="inner">
-				<div id="0" class="mountain"></div>
-				<div id="1" class="mountain"></div>
-				<div id="2" class="mountain"></div>
-				<div id="3" class="forest"></div>
-				<div id="4" class="forest"></div>
-				<div id="5" class="mountain"></div>
-				<div id="6" class="mountain"></div>
-				<div id="7" class="forest"></div>
-				<div id="8" class="forest"></div>
-				<div id="9" class="forest"></div>
-				<div id="10" class="mountain"></div>
-				<div id="11" class="forest"></div>
-				<div id="12" class="forest">
-					<img src="pics/Face.png" width="75" height="75"></img>
-				</div>
-				<div id="13" class="forest"></div>
-				<div id="14" class="forest"></div>
-				<div id="15" class="mountain"></div>
-				<div id="16" class="forest"></div>
-				<div id="17" class="forest"></div>
-				<div id="18" class="forest"></div>
-				<div id="19" class="forest"></div>
-				<div id="20" class="mountain"></div>
-				<div id="21" class="mountain"></div>
-				<div id="22" class="forest"></div>
-				<div id="23" class="forest"></div>
-				<div id="24" class="forest"></div>
-			</div>
+			
+		<canvas></canvas>
+
+			<!--*********************-->
+			<!--Button container-->
+			<!--*********************-->
 			<div id="arrowContainer">
 
 				<div class="arrows up">
@@ -115,14 +125,15 @@
 			  		<img src="pics/downArrow.png" width="50" height="50" onclick="moveDown()"></img>
 			  	</div>
 
-		<!--*********************-->
-		<!--back button-->
-		<!--*********************-->
-		<button id='backbtn' onclick="reverse('#map', '#game')">RETURN</button>
+			<!--*********************-->
+			<!--back button-->
+			<!--*********************-->
+			<div id='backbtn' onclick="reverse('#map', '#game')">
+				<p class="text">RETURN</p>
 		  	</div>
 
 		
-	<!-- end of the map div-->
+	<!-- end of the map div-->	
 	</div>
 
 <!-- end of the full div -->	
