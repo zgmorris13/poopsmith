@@ -27,7 +27,7 @@ function doStuff() {
 
     var xPos = 0;
     var yPos = 0;
-
+    context.drawImage(grass, xPos, yPos, 32, 32)
     console.log("MapArray.length" + mapArray.length)
     for (var iX = 0; iX < mapArray.length; iX++) {
         console.log("iX: " + iX)
