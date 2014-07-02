@@ -1,0 +1,40 @@
+#main {
+    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    animation: myfirst 5s;
+    background: greenyellow;
+}
+
+#attributes {
+	animation: mysecond 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	background: yellow;
+	color: tomato;
+}
+
+#storeValueBtn {
+	position: relative;
+	animation: slide 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    from {background: red;}
+    to {background: yellow;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {background: red; left: 200px;}
+    to {background: yellow; left: 0px;}
+} 
+
+@keyframes mysecond {
+	from {background: greenyellow; left: 200px;}
+    to {background: darkslategray; left: 0px;}
+}
+
+@keyframes slide {
+	from {left: 500px;}
+    to {left: 0px;}
+}
