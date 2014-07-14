@@ -44,7 +44,6 @@ function storeValue() {
     }
 
     clearValue.onclick = function() {
-        localStorage.setItem(1, 0)
-        count = 0
+        localStorage.clear()
     }
 }
